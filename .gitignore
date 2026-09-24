@@ -1,0 +1,22 @@
+# Local Python environment and caches
+.venv/
+.matplotlib/
+__pycache__/
+*.py[cod]
+
+# Source data and regenerated derivatives are retained locally only.
+# Their licences, provenance, and possible access restrictions must be checked
+# before any separate public data release.
+data_raw/*
+!data_raw/README.md
+data_processed/*
+!data_processed/README.md
+
+# Analysis outputs are regenerated from the scripts.  Keep only their guide.
+outputs/*
+!outputs/README.md
+
+# Local operating-system and editor files
+.DS_Store
+Thumbs.db
+.vscode/
