@@ -1,12 +1,13 @@
-# Generated processed data
+# Generated analysis outputs
 
-This directory is created by `src/01_prepare_ml_data.py`. Its contents are reproducible from the local source files and are excluded from GitHub by default.
+All tables, figures, and text reports here are produced by the numbered scripts in `src/`. They are excluded from GitHub by default because they can be regenerated and may require review before publication.
 
-Key generated files include:
+Important report groups:
 
-- `paper1_ml_annual_long_ready.csv` — parameter-level annual records joined with climate features
-- `climate_city_year_2015_2024_with_spi12.csv` — city-year climate features
-- `data_quality_report.txt` — validation and processing record
-- `climate_imputed_months.csv` — transparent log of modelling-only climate imputation
-- `climate_workbook_corrections.csv` — corrections made by checking raw DWD values
+- `baseline_*` — temporal baseline comparison
+- `candidate_*` and `selected_*` — model-selection evidence
+- `final_*` — final held-out parameter-model results and feature-importance figures
+- `observed_wqi_*` — observed WQI calculation and city summaries
+- `derived_wqi_*` — exploratory WQI derived from held-out parameter predictions
+- `wqi_weight_sensitivity_*` — comparison of inverse-limit and equal-weight WQI methods
 
