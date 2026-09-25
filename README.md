@@ -1,13 +1,12 @@
-# Local source data (not included in the public repository)
+# Generated processed data
 
-Place the three frozen Paper 1 master workbooks and the three DWD monthly climate ZIP files here. The analysis scripts expect the exact filenames listed in the root README.
+This directory is created by `src/01_prepare_ml_data.py`. Its contents are reproducible from the local source files and are excluded from GitHub by default.
 
-Do not upload this directory to GitHub unless you have confirmed all of the following:
+Key generated files include:
 
-1. You have the right to redistribute every workbook and climate file.
-2. Station identifiers and other fields are permitted to be public.
-3. Original-source licences and citations are included.
-4. Any institutional or supervisor restrictions have been cleared.
-
-The DWD climate ZIP files are read directly by `src/01_prepare_ml_data.py`; they do not need to be manually unpacked.
+- `paper1_ml_annual_long_ready.csv` — parameter-level annual records joined with climate features
+- `climate_city_year_2015_2024_with_spi12.csv` — city-year climate features
+- `data_quality_report.txt` — validation and processing record
+- `climate_imputed_months.csv` — transparent log of modelling-only climate imputation
+- `climate_workbook_corrections.csv` — corrections made by checking raw DWD values
 
